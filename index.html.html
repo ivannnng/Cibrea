@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cibrea - Nutrition Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo in the top left corner, image is round -->
+                <img src="Green and White Flat Illustrative Feeding Plant Agriculture Logo.png" alt="Cibrea Logo" class="logo-image">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Nutrition Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Transform Your Body with Cibrea's Nutrition Plans!</h2>
+            <p>Health is the ultimate goal - choose our personalized nutrition plans and achieve the best results.</p>
+            <a href="#plans" class="cta-button">View Plans</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Personalized Nutrition Plans</h3>
+            <p>Customize your nutrition plan based on your body's needs and goals.</p>
+        </div>
+        <div class="service-card">
+            <h3>Health Tips</h3>
+            <p>Our experts provide helpful advice on health and nutrition.</p>
+        </div>
+        <div class="service-card">
+            <h3>Support and Tracking</h3>
+            <p>Continuous support in achieving your goals and progress tracking.</p>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <h2>Our Nutrition Plans</h2>
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>A plan for beginners with essential tips on healthy eating.</p>
+        </div>
+        <div class="plan">
+            <h3>Advanced Plan</h3>
+            <p>A plan for those who want to achieve top-notch results.</p>
+        </div>
+        <div class="plan">
+            <h3>Fitness Plan</h3>
+            <p>A nutrition plan for people who train and want to increase muscle mass.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <!-- Form with Netlify handling -->
+        <form name="contact" method="POST" data-netlify="true">
+            <!-- Hidden input for form name -->
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Cibrea. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js">
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Cibrea website is loaded!");
+        
+            // Dodajemo jednostavnu funkcionalnost za interakciju sa dugmetom CTA
+            const ctaButton = document.querySelector('.cta-button');
+        
+            ctaButton.addEventListener('click', function() {
+                alert('Thank you for exploring our nutrition plans!');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
